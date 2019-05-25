@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.chaitanya.EN_generalinfo"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/main_toolbar" android:id="@+id/toolbar_egi"></include>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/district_text"
+                android:text="District"
+                android:layout_below="@id/toolbar_egi"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/district"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/district_text"
+                android:padding="10dp"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/taluka_text"
+                android:text="Taluka"
+                android:layout_below="@id/district"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/taluka"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/taluka_text"
+                android:padding="10dp"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/village_text"
+                android:text="Village/Town/City"
+                android:layout_below="@id/taluka"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/village"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/village_text"
+                android:textSize="24dp"
+                android:padding="10dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"
+                android:textAllCaps="false"
+                android:layout_below="@id/village"
+                android:id="@+id/next_btn"
+                android:layout_marginTop="300dp"
+                android:layout_alignEnd="@id/village"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="30dp"
+                android:textSize="20dp"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

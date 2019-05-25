@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.chaitanya.EN_ds_financial">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/main_toolbar" android:id="@+id/toolbar_ds_financial"></include>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Who manages money in your Household?"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp"
+                android:layout_below="@id/toolbar_ds_financial"
+                android:id="@+id/manages_money_text_ds"/>
+
+            <Spinner
+                android:id="@+id/manages_money_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/family"
+                android:layout_below="@id/manages_money_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Who is responsible for day to day decisions about money?"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/manages_money_spinner_ds"
+                android:padding="10dp"
+                android:id="@+id/day_to_day_text_ds"/>
+
+            <Spinner
+                android:id="@+id/day_to_day_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/family"
+                android:layout_below="@id/day_to_day_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do you know the various financial expenses of your household?"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/day_to_day_spinner_ds"
+                android:padding="10dp"
+                android:id="@+id/expenses_text_ds"/>
+
+            <Spinner
+                android:id="@+id/expenses_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/hear_count"
+                android:layout_below="@id/expenses_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Does you household consult you before making a financial decision/financial expense?"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/expenses_spinner_ds"
+                android:padding="10dp"
+                android:id="@+id/consult_text_ds"/>
+
+            <Spinner
+                android:id="@+id/consult_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/hear_count"
+                android:layout_below="@id/consult_text_ds"
+                android:padding="10dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:id="@+id/next3_btn_ds"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimaryDark"
+                android:textSize="24dp"
+                android:layout_alignEnd="@id/consult_spinner_ds"
+                android:layout_below="@id/consult_spinner_ds"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

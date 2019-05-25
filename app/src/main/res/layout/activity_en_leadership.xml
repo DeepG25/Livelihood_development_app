@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.chaitanya.EN_leadership">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/main_toolbar" android:id="@+id/toolbar_ds_leadership"></include>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="When you are confronted with new situations, how often do you feel you can cope up with it?"
+                android:textSize="24dp"
+                android:layout_below="@id/toolbar_ds_leadership"
+                android:textColor="@android:color/black"
+                android:padding="10dp"
+                android:id="@+id/new_sit_text_ds"/>
+
+            <Spinner
+                android:id="@+id/new_sit_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/hear_count"
+                android:layout_below="@id/new_sit_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How often do you feel confortable in making tough decision?"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/new_sit_spinner_ds"
+                android:padding="10dp"
+                android:id="@+id/feel_con_text_ds"/>
+
+            <Spinner
+                android:id="@+id/feel_con_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/hear_count"
+                android:layout_below="@id/feel_con_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How often are you confident in negotiation skils across different setting?"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/feel_con_spinner_ds"
+                android:padding="10dp"
+                android:id="@+id/confident_text_ds"/>
+
+            <Spinner
+                android:id="@+id/confident_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/hear_count"
+                android:layout_below="@id/confident_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="When pursuing a goal, how often do you maintain a positive, focused attitude, despite obstacles?"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/confident_spinner_ds"
+                android:padding="10dp"
+                android:id="@+id/positive_text_ds"/>
+
+            <Spinner
+                android:id="@+id/positive_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/hear_count"
+                android:layout_below="@id/positive_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How often do you empathize with other people's needs, concerns, and goals?"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/positive_spinner_ds"
+                android:padding="10dp"
+                android:id="@+id/empathize_text_ds"/>
+
+            <Spinner
+                android:id="@+id/empathize_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/hear_count"
+                android:layout_below="@id/empathize_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do you know where to turn for the resouces you need ?"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/empathize_spinner_ds"
+                android:padding="10dp"
+                android:id="@+id/resouces_text_ds"/>
+
+            <Spinner
+                android:id="@+id/resouces_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/hear_count"
+                android:layout_below="@id/resouces_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="When you see an opportunity for growth of you/family/team, do you take the initiative to grab the opportunity?"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/resouces_spinner_ds"
+                android:padding="10dp"
+                android:id="@+id/opportunity_text_ds"/>
+
+            <Spinner
+                android:id="@+id/opportunity_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/hear_count"
+                android:layout_below="@id/opportunity_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="If anything is in the best interest of your team/family will you take the risk ?"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/opportunity_spinner_ds"
+                android:padding="10dp"
+                android:id="@+id/interest_text_ds"/>
+
+            <Spinner
+                android:id="@+id/interest_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/hear_count"
+                android:layout_below="@id/interest_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="In a group activity, can you effectively assign tasks to people (on the basis of their strengths)?"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/interest_spinner_ds"
+                android:padding="10dp"
+                android:id="@+id/assign_tasks_text_ds"/>
+
+            <Spinner
+                android:id="@+id/assign_tasks_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/hear_count"
+                android:layout_below="@id/assign_tasks_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="In situations that are full of turnroll and confusion, do you stay calm and level headed?"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/assign_tasks_spinner_ds"
+                android:padding="10dp"
+                android:id="@+id/calm_text_ds"/>
+
+            <Spinner
+                android:id="@+id/calm_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/hear_count"
+                android:layout_below="@id/calm_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How confortable are you in decision making?"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/calm_spinner_ds"
+                android:padding="10dp"
+                android:id="@+id/decision_text_ds"/>
+
+            <Spinner
+                android:id="@+id/decision_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/hear_count"
+                android:layout_below="@id/decision_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do you have an accurate understanding of your own limitations?"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/decision_spinner_ds"
+                android:padding="10dp"
+                android:id="@+id/limitations_text_ds"/>
+
+            <Spinner
+                android:id="@+id/limitations_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/hear_count"
+                android:layout_below="@id/limitations_text_ds"
+                android:padding="10dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:id="@+id/next2_btn_ds"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimaryDark"
+                android:textSize="24dp"
+                android:layout_alignEnd="@id/limitations_spinner_ds"
+                android:layout_below="@id/limitations_spinner_ds"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

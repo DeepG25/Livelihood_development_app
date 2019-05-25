@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.chaitanya.EN_ds_basic">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/main_toolbar" android:id="@+id/toolbar_ds_basic"></include>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp"
+                android:layout_below="@id/toolbar_ds_basic"
+                android:id="@+id/name_text_ds"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:id="@+id/name_et_ds"
+                android:padding="10dp"
+                android:layout_below="@id/name_text_ds"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone Number"
+                android:textColor="@android:color/black"
+                android:padding="10dp"
+                android:id="@+id/phone_text_ds"
+                android:layout_below="@id/name_et_ds"
+                android:textSize="24dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:id="@+id/phone_et_ds"
+                android:padding="10dp"
+                android:layout_below="@id/phone_text_ds"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Village/Town/City"
+                android:textColor="@android:color/black"
+                android:padding="10dp"
+                android:id="@+id/village_text_ds"
+                android:layout_below="@id/phone_et_ds"
+                android:textSize="24dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:id="@+id/village_et_ds"
+                android:padding="10dp"
+                android:layout_below="@id/village_text_ds"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Surveyor Name"
+                android:textColor="@android:color/black"
+                android:padding="10dp"
+                android:id="@+id/surveyor_text_ds"
+                android:layout_below="@id/village_et_ds"
+                android:textSize="24dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:id="@+id/surveyor_et_ds"
+                android:padding="10dp"
+                android:layout_below="@id/surveyor_text_ds"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textColor="@android:color/black"
+                android:padding="10dp"
+                android:id="@+id/date_text_ds"
+                android:layout_below="@id/surveyor_et_ds"
+                android:textSize="24dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:id="@+id/date_et_ds"
+                android:padding="10dp"
+                android:layout_below="@id/date_text_ds"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@android:color/white"
+                android:textSize="24dp"
+                android:id="@+id/next_btn_ds"
+                android:layout_below="@id/date_et_ds"
+                android:layout_alignEnd="@id/date_et_ds"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="30dp"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

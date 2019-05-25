@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.chaitanya.EN_ds_brand_awarness">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/main_toolbar" android:id="@+id/toolbar_ds_awareness"></include>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How familiar were you with LTFS ?"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/toolbar_ds_awareness"
+                android:padding="10dp"
+                android:id="@+id/ltfs_familier_text_ds"/>
+
+            <Spinner
+                android:id="@+id/ltfs_familier_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/ltfs_familier"
+                android:layout_below="@id/ltfs_familier_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="When did you first hear about LTFS ?"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/ltfs_familier_spinner_ds"
+                android:padding="10dp"
+                android:id="@+id/ltfs_firsthear_text_ds"/>
+
+            <Spinner
+                android:id="@+id/ltfs_firsthear_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/ltfs_firsthear"
+                android:layout_below="@id/ltfs_firsthear_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="When you think of financial loans, what brand comes to your mind ?"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/ltfs_firsthear_spinner_ds"
+                android:padding="10dp"
+                android:id="@+id/financial_text_ds"/>
+
+            <EditText
+                android:id="@+id/financial_et_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_below="@id/financial_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How ofter do you hear people talking about LTFS ?"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/financial_et_ds"
+                android:padding="10dp"
+                android:id="@+id/hear_count_text_ds"/>
+
+            <Spinner
+                android:id="@+id/hear_count_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/hear_count"
+                android:layout_below="@id/hear_count_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How likely are you to join any program run by LTFS ? (Beginning of the Program)"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/hear_count_spinner_ds"
+                android:padding="10dp"
+                android:id="@+id/join_anyprogram_start_text_ds"/>
+
+            <Spinner
+                android:id="@+id/join_anyprogram_start_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/join_program"
+                android:layout_below="@id/join_anyprogram_start_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="To what extent would you recommend LTFS to anyone ? (End of the Program)"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/join_anyprogram_start_spinner_ds"
+                android:padding="10dp"
+                android:id="@+id/join_anyprogram_end_text_ds"/>
+
+            <Spinner
+                android:id="@+id/join_anyprogram_end_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/join_program"
+                android:layout_below="@id/join_anyprogram_end_text_ds"
+                android:padding="10dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:id="@+id/next1_btn_ds"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimaryDark"
+                android:textSize="24dp"
+                android:layout_alignEnd="@id/join_anyprogram_end_text_ds"
+                android:layout_below="@id/join_anyprogram_end_spinner_ds"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

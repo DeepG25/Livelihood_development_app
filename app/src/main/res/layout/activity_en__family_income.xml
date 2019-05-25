@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.chaitanya.EN_FamilyIncome">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/main_toolbar" android:id="@+id/toolbar_efamily_income"></include>
+
+            <TextView
+                android:id="@+id/enrollment_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enrollment ID :"
+                android:textSize="24dp"
+                android:layout_below="@id/toolbar_efamily_income"
+                android:textColor="@android:color/black"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/enrollment_id_number3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toolbar_efamily_income"
+                android:layout_toRightOf="@id/enrollment_id"
+                android:padding="10dp"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/particular_income"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Particular Source Wise Income (in Rs.)"
+                android:layout_below="@id/enrollment_id_number"
+                android:textSize="22dp"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_red_light"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/agriculture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Agriculture (all seasons)"
+                android:layout_below="@id/particular_income"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/agriculture_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:layout_below="@id/agriculture"
+                android:padding="10dp"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/animal_husbandry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Animal Husbandry"
+                android:layout_below="@id/agriculture_et"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/animal_husbandry_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:layout_below="@id/animal_husbandry"
+                android:padding="10dp"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/ntfp_sale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NTFP Sale"
+                android:layout_below="@id/animal_husbandry_et"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/ntfp_sale_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:layout_below="@id/ntfp_sale"
+                android:padding="10dp"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/local_labour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Local Labour"
+                android:layout_below="@id/ntfp_sale_et"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/local_labour_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:layout_below="@id/local_labour"
+                android:padding="10dp"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/migrant_labour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Migrant Labour"
+                android:layout_below="@id/local_labour_et"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/migrant_labour_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:padding="10dp"
+                android:layout_below="@id/migrant_labour"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Service"
+                android:layout_below="@id/migrant_labour_et"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/service_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:layout_below="@id/service"
+                android:inputType="number"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/enterprises"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enterprises"
+                android:layout_below="@id/service_et"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/enterprises_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="0"
+                android:layout_below="@id/enterprises"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/govt_pension"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Govt. Pension"
+                android:layout_below="@id/enterprises_et"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/govt_pension_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:padding="10dp"
+                android:layout_below="@id/govt_pension"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/other_income"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Other Income"
+                android:layout_below="@id/govt_pension_et"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/other_income_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:padding="10dp"
+                android:layout_below="@id/other_income"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/total_income"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Income"
+                android:layout_below="@id/other_income_et"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/total_income_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:padding="10dp"
+                android:layout_below="@id/total_income"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/next5_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:layout_below="@id/total_income_et"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:layout_marginBottom="30dp"
+                android:padding="15dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

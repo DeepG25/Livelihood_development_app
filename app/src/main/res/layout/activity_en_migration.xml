@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.chaitanya.EN_migration">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/main_toolbar" android:id="@+id/toolbar_emigration"></include>
+
+            <TextView
+                android:id="@+id/enrollment_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Enrollment ID :"
+                android:layout_below="@id/toolbar_emigration"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/enrollment_id_number5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/enrollment_id"
+                android:layout_below="@id/toolbar_emigration"
+                android:padding="10dp"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/family_migrate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/enrollment_id_number"
+                android:padding="10dp"
+                android:text="Did any members of your family migrate last year for employment"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+            <Spinner
+                android:id="@+id/family_migrate_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/family_migrate"
+                android:entries="@array/yes_no"
+                android:padding="12dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/if_yes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/family_migrate_spinner"
+                android:padding="10dp"
+                android:background="@android:color/holo_red_light"
+                android:text="If YES "
+                android:textColor="@android:color/white"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/male_migrate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/if_yes"
+                android:padding="10dp"
+                android:text="How many MALE"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <EditText
+                android:id="@+id/male_migrate_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/male_migrate"
+                android:hint="0"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/female_migrate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/male_migrate_et"
+                android:padding="10dp"
+                android:text="How many FEMALE"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <EditText
+                android:id="@+id/female_migrate_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/female_migrate"
+                android:hint="0"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/time_migrate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/female_migrate_et"
+                android:padding="10dp"
+                android:text="How many Months"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <EditText
+                android:id="@+id/time_migrate_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/time_migrate"
+                android:hint="0"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/reason_migrate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/time_migrate_et"
+                android:padding="10dp"
+                android:text="Reason for migration"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/reason_migrate_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reason_migrate"
+                android:entries="@array/migration"
+                android:padding="10dp">
+            </Spinner>
+
+            <Button
+                android:id="@+id/next7_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reason_migrate_spinner"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="30dp"
+                android:padding="15dp"
+                android:textAllCaps="false"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_marginRight="10dp"
+                android:text="Next" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

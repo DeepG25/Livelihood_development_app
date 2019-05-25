@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.chaitanya.Register"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/registerText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:textSize="60dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAlignment="center"
+                android:layout_margin="55dp" />
+
+            <ImageView
+                android:id="@+id/email_regicon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/user"
+                android:layout_below="@+id/registerText"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/registerEmailET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registerText"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@id/email_regicon"
+                android:inputType="number"
+                android:hint="Enrollment ID" />
+
+            <ImageView
+                android:id="@+id/pass_regicon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/passwordicon"
+                android:layout_below="@+id/registerEmailET"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/registerPassET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registerEmailET"
+                android:layout_toRightOf="@id/pass_regicon"
+                android:layout_margin="5dp"
+                android:hint="Password (atleast 6 characters)"
+                android:inputType="textPassword"
+                android:maxLength="10"/>
+            />
+
+            <ImageView
+                android:id="@+id/conpass_regicon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/passwordicon"
+                android:layout_below="@+id/registerPassET"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/registerPassConET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/registerPassET"
+                android:layout_margin="5dp"
+                android:hint="Confirm Password"
+                android:layout_toRightOf="@id/conpass_regicon"
+                android:inputType="textPassword"
+                android:maxLength="10"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorPrimaryDark"
+                android:text="Register"
+                android:textColor="#fff"
+                android:id="@+id/register_btn"
+                android:layout_below="@id/registerPassConET"
+                android:layout_marginTop="60dp"
+                android:textSize="20dp"
+                android:padding="15dp"
+                android:textAllCaps="false" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorPrimaryDark"
+                android:text="Login"
+                android:textColor="#fff"
+                android:id="@+id/login_btn"
+                android:layout_below="@id/register_btn"
+                android:layout_marginTop="40dp"
+                android:textSize="20dp"
+                android:paddingLeft="27dp"
+                android:paddingRight="27dp"
+                android:textAllCaps="false"
+                />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

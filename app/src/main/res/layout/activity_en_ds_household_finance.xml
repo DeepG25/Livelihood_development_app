@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.chaitanya.EN_ds_household_finance">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/main_toolbar" android:id="@+id/toolbar_ds_household"></include>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What are all of your sources of income?"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/toolbar_ds_household"
+                android:padding="10dp"
+                android:id="@+id/sources_income_text_ds"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salary"
+                android:textSize="24dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/salary_box"
+                android:layout_below="@id/sources_income_text_ds"
+                android:padding="10dp"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Business"
+                android:textSize="24dp"
+                android:id="@+id/business_box"
+                android:layout_below="@id/sources_income_text_ds"
+                android:layout_alignStart="@id/labour_box"
+                android:layout_toRightOf="@id/salary_box"
+                android:padding="10dp" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Investments"
+                android:layout_marginLeft="10dp"
+                android:textSize="24dp"
+                android:id="@+id/investments_box"
+                android:padding="10dp"
+                android:layout_below="@id/salary_box"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Labour"
+                android:textSize="24dp"
+                android:id="@+id/labour_box"
+                android:layout_below="@id/salary_box"
+                android:layout_toRightOf="@id/investments_box"
+                android:padding="10dp"
+                android:layout_marginLeft="50dp"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Others"
+                android:textSize="24dp"
+                android:id="@+id/other_box"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:layout_below="@id/investments_box"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What was your household income per month prior to this program? (Beginning of the Program)"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/other_box"
+                android:padding="10dp"
+                android:id="@+id/income_prior_text_ds"/>
+
+            <EditText
+                android:id="@+id/income_prior_et_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_below="@id/income_prior_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What is your individual income?"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/income_prior_et_ds"
+                android:padding="10dp"
+                android:id="@+id/income_individual_text_ds"/>
+
+            <EditText
+                android:id="@+id/income_individual_et_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_below="@id/income_individual_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do you have a monthly budget for your Household?"
+                android:textSize="24dp"
+                android:layout_below="@id/income_individual_et_ds"
+                android:textColor="@android:color/black"
+                android:padding="10dp"
+                android:id="@+id/budget_text_ds"/>
+
+            <Spinner
+                android:id="@+id/budget_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/hear_count"
+                android:layout_below="@id/budget_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Does your income cover all living costs"
+                android:textSize="24dp"
+                android:layout_below="@id/budget_spinner_ds"
+                android:textColor="@android:color/black"
+                android:padding="10dp"
+                android:id="@+id/cost_text_ds"/>
+
+            <Spinner
+                android:id="@+id/cost_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/hear_count"
+                android:layout_below="@id/cost_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How much do you save each month?"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/cost_spinner_ds"
+                android:padding="10dp"
+                android:id="@+id/save_money_text_ds"/>
+
+            <EditText
+                android:id="@+id/save_money_et_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_below="@id/save_money_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do you save money in the Bank?"
+                android:textSize="24dp"
+                android:layout_below="@id/save_money_et_ds"
+                android:textColor="@android:color/black"
+                android:padding="10dp"
+                android:id="@+id/save_bank_text_ds"/>
+
+            <Spinner
+                android:id="@+id/save_bank_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/hear_count"
+                android:layout_below="@id/save_bank_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do you have Investments?"
+                android:textSize="24dp"
+                android:layout_below="@id/save_bank_spinner_ds"
+                android:textColor="@android:color/black"
+                android:padding="10dp"
+                android:id="@+id/investments_text_ds"/>
+
+            <Spinner
+                android:id="@+id/investments_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/yes_no"
+                android:layout_below="@id/investments_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Have you ever used Digital modes of payments?"
+                android:textSize="24dp"
+                android:layout_below="@id/investments_spinner_ds"
+                android:textColor="@android:color/black"
+                android:padding="10dp"
+                android:id="@+id/digital_text_ds"/>
+
+            <Spinner
+                android:id="@+id/digital_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/hear_count"
+                android:layout_below="@id/digital_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What digital modes of payments have you used?"
+                android:textSize="24dp"
+                android:layout_below="@id/digital_spinner_ds"
+                android:textColor="@android:color/black"
+                android:padding="10dp"
+                android:id="@+id/modes_payments_text_ds"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Banking Card"
+                android:textSize="24dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/banking_card_box"
+                android:layout_below="@id/modes_payments_text_ds"
+                android:padding="10dp"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile Wallet"
+                android:textSize="24dp"
+                android:id="@+id/mobile_wallet_box"
+                android:layout_below="@id/modes_payments_text_ds"
+                android:layout_toRightOf="@id/banking_card_box"
+                android:padding="10dp" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UPI"
+                android:layout_marginLeft="10dp"
+                android:textSize="24dp"
+                android:id="@+id/upi_box"
+                android:padding="10dp"
+                android:layout_below="@id/banking_card_box"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AePS"
+                android:layout_alignStart="@id/mobile_wallet_box"
+                android:textSize="24dp"
+                android:id="@+id/aeps_box"
+                android:layout_below="@id/banking_card_box"
+                android:layout_toRightOf="@id/upi_box"
+                android:padding="10dp" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USSD"
+                android:textSize="24dp"
+                android:id="@+id/ussd_box"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:layout_below="@id/upi_box"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="None"
+                android:textSize="24dp"
+                android:id="@+id/none_box"
+                android:layout_below="@id/upi_box"
+                android:layout_toRightOf="@id/ussd_box"
+                android:layout_alignStart="@id/mobile_wallet_box"
+                android:padding="10dp" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:id="@+id/next4_btn_ds"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimaryDark"
+                android:textSize="24dp"
+                android:layout_alignEnd="@id/mobile_wallet_box"
+                android:layout_below="@id/none_box"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

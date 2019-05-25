@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.chaitanya.EN_fwwbenterprise">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/main_toolbar" android:id="@+id/toolbar_fwwb_enterprise"></include>
+            <TextView
+                android:id="@+id/enrollment_id_fwwb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="0dp"
+                android:padding="10dp"
+                android:text="Enrollment ID"
+                android:layout_below="@id/toolbar_fwwb_enterprise"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/enrollment_id_number_fwwb_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/enrollment_id_fwwb"
+                android:padding="10dp"
+                android:layout_below="@id/toolbar_fwwb_enterprise"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/entrepreneur_type_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/enrollment_id_number_fwwb_4"
+                android:padding="10dp"
+                android:text="Type of Entrepreneur"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/entrepreneur_type_spinner_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/entrepreneur_type_fwwb"
+                android:entries="@array/entrepreneur_type"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/buisness_activity_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/entrepreneur_type_spinner_fwwb"
+                android:padding="10dp"
+                android:text="Business Activity"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <EditText
+                android:id="@+id/buisness_activity_et_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buisness_activity_fwwb"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/no_years_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buisness_activity_et_fwwb"
+                android:padding="10dp"
+                android:text="No. of Years in Business"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <EditText
+                android:id="@+id/no_years_et_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/no_years_fwwb"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/seasonal_activity_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/no_years_et_fwwb"
+                android:padding="10dp"
+                android:text="Seasonal Activity"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/seasonal_activity_spinner_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/seasonal_activity_fwwb"
+                android:entries="@array/yes_no"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/devoted_years_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/seasonal_activity_spinner_fwwb"
+                android:padding="10dp"
+                android:text="Hours devoted in business (Hrs)"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <EditText
+                android:id="@+id/devoted_years_et_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/devoted_years_fwwb"
+                android:inputType="number"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/nature_business_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/devoted_years_et_fwwb"
+                android:padding="10dp"
+                android:text="Nature of business and Type"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/nature_business_spinner_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nature_business_fwwb"
+                android:entries="@array/nature_business"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/machinery_business_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nature_business_spinner_fwwb"
+                android:padding="10dp"
+                android:text="Do you own a machinery in your business"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/machinery_business_spinner_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/machinery_business_fwwb"
+                android:entries="@array/yes_no"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/start_business_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/machinery_business_spinner_fwwb"
+                android:padding="10dp"
+                android:text="How the business was started"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/start_business_spinner_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/start_business_fwwb"
+                android:entries="@array/start_business"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/premises_type_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/start_business_spinner_fwwb"
+                android:padding="10dp"
+                android:text="Type of premises for the business"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/premises_type_spinner_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/premises_type_fwwb"
+                android:entries="@array/premises_type"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/capital_invested_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/premises_type_spinner_fwwb"
+                android:padding="10dp"
+                android:text="Initial Capital Invested and its sources"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_red_light"
+                android:textSize="24dp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/fixed_capital_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/capital_invested_fwwb"
+                android:padding="10dp"
+                android:text="Fixed Capital (INR)"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <EditText
+                android:id="@+id/fixed_capital_et_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fixed_capital_fwwb"
+                android:inputType="number"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/working_capital_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fixed_capital_et_fwwb"
+                android:padding="10dp"
+                android:text="Working Capital (INR)"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <EditText
+                android:id="@+id/working_capital_et_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/working_capital_fwwb"
+                android:inputType="number"
+                android:padding="10dp" />
+            <TextView
+                android:id="@+id/total_investment_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/working_capital_et_fwwb"
+                android:padding="10dp"
+                android:text="Total Investment (INR)"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <EditText
+                android:id="@+id/total_investment_et_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/total_investment_fwwb"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/major_source_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/total_investment_et_fwwb"
+                android:padding="10dp"
+                android:text="Major Source"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/major_source_spinner_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/major_source_fwwb"
+                android:entries="@array/major_source"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/capital_details_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/major_source_spinner_fwwb"
+                android:padding="10dp"
+                android:text="Capital Details and its sources"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_red_light"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/working_capital_details_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/capital_details_fwwb"
+                android:padding="10dp"
+                android:text="Current working capital"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/working_capital_details_spinner_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/working_capital_details_fwwb"
+                android:entries="@array/major_source"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/working_capital_amount_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/working_capital_details_spinner_fwwb"
+                android:padding="10dp"
+                android:text="Amount (INR)"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <EditText
+                android:id="@+id/working_capital_amount_et_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/working_capital_amount_fwwb"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/fixed_capital_details_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/working_capital_amount_et_fwwb"
+                android:padding="10dp"
+                android:text="Current fixed capital"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/fixed_capital_details_spinner_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fixed_capital_details_fwwb"
+                android:entries="@array/major_source"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/fixed_capital_amount_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fixed_capital_details_spinner_fwwb"
+                android:padding="10dp"
+                android:text="Amount (INR)"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <EditText
+                android:id="@+id/fixed_capital_amount_et_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fixed_capital_amount_fwwb"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/manage_buisness_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fixed_capital_amount_et_fwwb"
+                android:padding="10dp"
+                android:text="Who manages the Business"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/manage_buisness_spinner_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/manage_buisness_fwwb"
+                android:entries="@array/manage_buisness"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/employed_persons_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/manage_buisness_spinner_fwwb"
+                android:padding="10dp"
+                android:text="Have you employed persons"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/employed_personss_spinner_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/employed_persons_fwwb"
+                android:entries="@array/yes_no"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/if_yes_persons_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/employed_personss_spinner_fwwb"
+                android:padding="10dp"
+                android:text="If YES, how many person you have employed"
+                android:textColor="@android:color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/if_yes_persons_et_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/if_yes_persons_fwwb"
+                android:padding="10dp"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/wages_per_persons_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/if_yes_persons_et_fwwb"
+                android:padding="10dp"
+                android:text="Wages per employee"
+                android:textColor="@android:color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/wages_per_persons_et_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/wages_per_persons_fwwb"
+                android:padding="10dp"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/current_sale_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/wages_per_persons_et_fwwb"
+                android:padding="10dp"
+                android:text="Current Sales"
+                android:textColor="@android:color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/current_sale_et_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/current_sale_fwwb"
+                android:padding="10dp"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/current_profit_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/current_sale_et_fwwb"
+                android:padding="10dp"
+                android:text="Current Profit"
+                android:textColor="@android:color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/current_profit_et_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/current_profit_fwwb"
+                android:padding="10dp"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/expense_breakup_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/current_profit_et_fwwb"
+                android:padding="10dp"
+                android:text="Break up of expenses incurred in business"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <EditText
+                android:id="@+id/expense_breakup_et_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/expense_breakup_fwwb"
+                android:hint="Expense (eg. Activity - Amount)"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/financial_record_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/expense_breakup_et_fwwb"
+                android:padding="10dp"
+                android:text="Do you maintain financial records for business"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/financial_record_spinner_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/financial_record_fwwb"
+                android:entries="@array/yes_no"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/if_yes_financial_record_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/financial_record_spinner_fwwb"
+                android:padding="10dp"
+                android:text="If YES, please select suitable options"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <RelativeLayout
+                android:id="@+id/if_yes_financial_record_relative_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/if_yes_financial_record_fwwb">
+
+                <CheckBox
+                    android:id="@+id/if_yes_financial_record_checkbox_fwwb_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Personal and\nfamily exp."
+                    android:padding="10dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="20dp"/>
+
+                <CheckBox
+                    android:id="@+id/if_yes_financial_record_checkbox_fwwb_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cash and\ncredit sales"
+                    android:padding="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="20dp"/>
+                <CheckBox
+                    android:id="@+id/if_yes_financial_record_checkbox_fwwb_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/if_yes_financial_record_checkbox_fwwb_1"
+                    android:text="Receivable and\npayable"
+                    android:padding="10dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="20dp" />
+                <CheckBox
+                    android:id="@+id/if_yes_financial_record_checkbox_fwwb_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/if_yes_financial_record_checkbox_fwwb_2"
+                    android:text="Stock and\ninventory"
+                    android:padding="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignStart="@id/if_yes_financial_record_checkbox_fwwb_2"/>
+                <CheckBox
+                    android:id="@+id/if_yes_financial_record_checkbox_fwwb_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/if_yes_financial_record_checkbox_fwwb_3"
+                    android:text="Business\nExpenditure"
+                    android:layout_alignParentStart="true"
+                    android:padding="10dp"
+                    android:layout_marginLeft="20dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/product_service_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/if_yes_financial_record_relative_checkbox"
+                android:padding="10dp"
+                android:text="Do you promote your product and services"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/product_service_spinner_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/product_service_fwwb"
+                android:entries="@array/yes_no"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/if_yes_promote_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/product_service_spinner_fwwb"
+                android:padding="10dp"
+                android:text="If YES, how you promote"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <RelativeLayout
+                android:id="@+id/if_yes_promote_relative_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/if_yes_promote_fwwb">
+
+                <CheckBox
+                    android:id="@+id/if_yes_promote_checkbox_fwwb_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Word of Mouth"
+                    android:padding="10dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="20dp"/>
+
+                <CheckBox
+                    android:id="@+id/if_yes_promote_checkbox_fwwb_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shop Name in board"
+                    android:padding="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="20dp"/>
+                <CheckBox
+                    android:id="@+id/if_yes_promote_checkbox_fwwb_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/if_yes_promote_checkbox_fwwb_1"
+                    android:text="Advertisement"
+                    android:padding="10dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="20dp" />
+                <CheckBox
+                    android:id="@+id/if_yes_promote_checkbox_fwwb_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/if_yes_promote_checkbox_fwwb_2"
+                    android:text="Exhibition/ fair"
+                    android:padding="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignStart="@id/if_yes_promote_checkbox_fwwb_2"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/are_you_doing_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/if_yes_promote_relative_checkbox"
+                android:padding="10dp"
+                android:text="Are you doing"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <RelativeLayout
+                android:id="@+id/are_you_doing_relative_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/are_you_doing_fwwb">
+
+                <CheckBox
+                    android:id="@+id/are_you_doing_checkbox_fwwb_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Branding"
+                    android:padding="10dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="20dp"/>
+
+                <CheckBox
+                    android:id="@+id/are_you_doing_checkbox_fwwb_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price Labeling"
+                    android:padding="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="20dp"/>
+                <CheckBox
+                    android:id="@+id/are_you_doing_checkbox_fwwb_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/are_you_doing_checkbox_fwwb_1"
+                    android:text="Packaging"
+                    android:padding="10dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="20dp" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/next3_btn_fwwb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/are_you_doing_relative_checkbox"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@android:color/white"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="30dp"
+                android:padding="15dp"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textSize="20dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

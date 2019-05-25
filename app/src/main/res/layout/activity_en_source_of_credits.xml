@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.chaitanya.EN_source_of_credits">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/main_toolbar" android:id="@+id/toolbar_esource"></include>
+
+            <TextView
+                android:id="@+id/enrollment_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Enrollment ID"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/enrollment_id_number4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/enrollment_id"
+                android:padding="10dp"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/credit_source"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/enrollment_id_number"
+                android:padding="10dp"
+                android:text="Credit Source"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <CheckBox
+                android:id="@+id/shg_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/credit_source"
+                android:padding="10dp"
+                android:textSize="18dp"
+                android:text="SHG" />
+
+            <CheckBox
+                android:id="@+id/bank_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/credit_source"
+                android:text="Bank"
+                android:padding="10dp"
+                android:layout_alignStart="@id/cooperative_box"
+                android:textSize="18dp"
+                android:layout_toRightOf="@id/shg_box"/>
+
+            <CheckBox
+                android:id="@+id/farmer_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shg_box"
+                android:textSize="18dp"
+                android:padding="10dp"
+                android:text="Farmer Credit Card" />
+
+            <CheckBox
+                android:id="@+id/cooperative_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shg_box"
+                android:layout_toRightOf="@id/farmer_box"
+                android:text="Cooperative Society"
+                android:textSize="17dp"
+                android:padding="10dp"/>
+
+            <CheckBox
+                android:id="@+id/microfinanace_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/farmer_box"
+                android:textSize="18dp"
+                android:padding="10dp"
+                android:text="Micro Fianance" />
+
+            <CheckBox
+                android:id="@+id/other_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/farmer_box"
+                android:layout_alignStart="@id/cooperative_box"
+                android:padding="10dp"
+                android:text="Other"
+                android:textSize="18dp"
+                android:layout_toRightOf="@id/microfinanace_box"/>
+
+            <CheckBox
+                android:id="@+id/noloan_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/microfinanace_box"
+                android:textSize="18dp"
+                android:padding="10dp"
+                android:text="No Loan Taken" />
+
+            <TextView
+                android:id="@+id/loan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/noloan_box"
+                android:padding="10dp"
+                android:text="Loan taken last year"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <EditText
+                android:id="@+id/loan_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/loan"
+                android:hint="0"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/loan_purpose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/loan_et"
+                android:padding="10dp"
+                android:text="Purpose of Loan"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/loan_purpose_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/loan_purpose"
+                android:entries="@array/loan_purpose"
+                android:padding="10dp">
+            </Spinner>
+
+            <Button
+                android:id="@+id/next6_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/loan_purpose_spinner"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textAllCaps="false"
+                android:layout_marginTop="30dp"
+                android:padding="15dp"
+                android:text="Next" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

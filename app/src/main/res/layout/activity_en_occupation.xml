@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.chaitanya.EN_occupation">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/main_toolbar" android:id="@+id/toolbar_eoccu"></include>
+
+            <TextView
+                android:id="@+id/enrollment_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enrollment ID :"
+                android:textSize="24dp"
+                android:layout_below="@id/toolbar_eoccu"
+                android:textColor="@android:color/black"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/enrollment_id_number1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toolbar_eoccu"
+                android:layout_toRightOf="@id/enrollment_id"
+                android:padding="10dp"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/income_source"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Source of Income"
+                android:background="@android:color/holo_red_light"
+                android:layout_below="@id/enrollment_id_number"
+                android:textSize="24dp"
+                android:textColor="@android:color/white"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/adult_male"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Adult Male"
+                android:layout_below="@id/income_source"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp"/>
+            <Spinner
+                android:id="@+id/adult_male_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/adult_male"
+                android:entries="@array/income_occupation"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/adult_female"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Adult Female"
+                android:layout_below="@id/adult_male_spinner"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp"/>
+
+            <Spinner
+                android:id="@+id/adult_female_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/adult_female"
+                android:entries="@array/income_occupation"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/children"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Children"
+                android:layout_below="@id/adult_female_spinner"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp"/>
+
+            <Spinner
+                android:id="@+id/children_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/children"
+                android:entries="@array/income_occupation"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/livelihood_activities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Have you started livelyhood activities through bank linkage"
+                android:layout_below="@id/children_spinner"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+
+            <Spinner
+                android:id="@+id/livelihood_activities_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/livelihood_activities"
+                android:entries="@array/yes_no"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp">
+            </Spinner>
+            <TextView
+                android:id="@+id/livelihood_enterprise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="If YES -> Which enterprise has been selected for livelihood promption"
+                android:layout_below="@id/livelihood_activities_spinner"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/if_yes_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Livelihood promption"
+                android:layout_below="@id/livelihood_enterprise"
+                android:padding="15dp"/>
+
+            <TextView
+                android:id="@+id/if_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/if_yes_et"
+                android:text="If NO ->"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="9dp"/>
+            <Spinner
+                android:id="@+id/if_no_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/if_no"
+                android:entries="@array/if_no"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/livelihood_training"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Have you reveived training for livelihood promotion through Govt. Scheme"
+                android:layout_below="@id/if_no_spinner"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+            <Spinner
+                android:id="@+id/livelihood_training_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/livelihood_training"
+                android:entries="@array/yes_no"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/livelihood_support"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do you believe the women centric livelihood activities are supportive for aditional income generation"
+                android:layout_below="@id/livelihood_training_spinner"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+
+            <Spinner
+                android:id="@+id/livelihood_support_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/livelihood_support"
+                android:entries="@array/yes_no"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp">
+            </Spinner>
+
+            <Button
+                android:id="@+id/next3_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:layout_below="@id/livelihood_support_spinner"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="30dp"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textAllCaps="false"
+                android:padding="15dp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

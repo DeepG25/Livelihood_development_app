@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.chaitanya.EN_social_security_scheme">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/main_toolbar" android:id="@+id/toolbar_esocial_scheme"></include>
+
+            <TextView
+                android:id="@+id/enrollment_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Enrollment ID :"
+                android:layout_below="@id/toolbar_esocial_scheme"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/enrollment_id_number7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toolbar_esocial_scheme"
+                android:layout_toRightOf="@id/enrollment_id"
+                android:padding="10dp"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Goverment Schemes"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_red_light"
+                android:layout_below="@id/enrollment_id_number"
+                android:id="@+id/text_govt"
+                android:textSize="24dp"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/pmuy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_govt"
+                android:padding="10dp"
+                android:text="Pradhanmanrti Ujjwal Yojna (PMUY)"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/pmuy_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pmuy"
+                android:entries="@array/yes_no"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/jsy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pmuy_spinner"
+                android:padding="10dp"
+                android:text="Janani Suraksha Yojna (JSY)"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/jsy_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jsy"
+                android:entries="@array/yes_no"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/apy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jsy_spinner"
+                android:padding="10dp"
+                android:text="Atal Pension Yojna (PMUY)"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/apy_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/apy"
+                android:entries="@array/yes_no"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/pmpby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/apy_spinner"
+                android:padding="10dp"
+                android:text="Pradhanmantri Pik Bima Yojna (PMPBY)"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/pmpby_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pmpby"
+                android:entries="@array/yes_no"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/gmsavy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pmpby_spinner"
+                android:padding="10dp"
+                android:text="Gopinath Munde Shetkari Aapghat Vima Yojna (GMSAVY)"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/gmsavy_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gmsavy"
+                android:entries="@array/yes_no"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/ssy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gmsavy_spinner"
+                android:padding="10dp"
+                android:text="Suknya Samruddhi Yojna (SSY)"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/ssy_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ssy"
+                android:entries="@array/yes_no"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/women_entitlement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ssy_spinner"
+                android:padding="10dp"
+                android:text="Use of women entitlement act (for House and Land)"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/women_entitlement_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/women_entitlement"
+                android:entries="@array/yes_no"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/pmjjby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/women_entitlement_spinner"
+                android:padding="10dp"
+                android:text="Pradhan Mantri Jeevan Jyoti Bima Yojna (PMJJBY)"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/pmjjby_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pmjjby"
+                android:entries="@array/yes_no"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/pmsby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pmjjby_spinner"
+                android:padding="10dp"
+                android:text="Pradhan Mantri Suraksha Bima Yojna (PMSBY)"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/pmsby_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pmsby"
+                android:entries="@array/yes_no"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/family_scheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pmsby_spinner"
+                android:padding="10dp"
+                android:text="Does your family applied for any schemes at respetive govt. office"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/family_scheme_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/family_scheme"
+                android:entries="@array/yes_no"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/if_no_scheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/family_scheme_spinner"
+                android:padding="10dp"
+                android:text="If No,then why"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/if_no_scheme_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/if_no_scheme"
+                android:entries="@array/if_no_scheme"
+                android:padding="10dp">
+            </Spinner>
+
+            <Button
+                android:id="@+id/next9_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/if_no_scheme_spinner"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="30dp"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textAllCaps="false"
+                android:layout_marginTop="30dp"
+                android:padding="15dp"
+                android:text="Next" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

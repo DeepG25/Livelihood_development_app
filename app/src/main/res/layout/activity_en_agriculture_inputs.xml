@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.chaitanya.EN_agriculture_inputs">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/main_toolbar" android:id="@+id/toolbar_eagriculture_inputs"></include>
+
+            <TextView
+                android:id="@+id/enrollment_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Enrollment ID :"
+                android:layout_below="@id/toolbar_eagriculture_inputs"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/enrollment_id_number9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toolbar_eagriculture_inputs"
+                android:layout_toRightOf="@id/enrollment_id"
+                android:padding="10dp"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/purchase_process"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/enrollment_id_number"
+                android:padding="10dp"
+                android:text="Was there a purchase process to aggregate agriculture inputs in all Villages/Groups"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/purchase_process_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/purchase_process"
+                android:entries="@array/yes_no"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/participate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/purchase_process_spinner"
+                android:padding="10dp"
+                android:text="If YES, did you participate in that"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/participate_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/participate"
+                android:entries="@array/yes_no"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/agricultural_advice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/participate_spinner"
+                android:padding="10dp"
+                android:text="Did you regularly get agricultural advice from Agricultural Dept."
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/agricultural_advice_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/agricultural_advice"
+                android:entries="@array/yes_no"
+                android:padding="10dp">
+            </Spinner>
+
+
+            <Button
+                android:id="@+id/next11_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/agricultural_advice_spinner"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="30dp"
+                android:padding="15dp"
+                android:text="Submit"
+                android:textAllCaps="false"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

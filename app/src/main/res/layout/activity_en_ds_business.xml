@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.chaitanya.EN_ds_business">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/main_toolbar" android:id="@+id/toolbar_ds_buisness"></include>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How many staff members do you have?"
+                android:textSize="24dp"
+                android:layout_below="@id/toolbar_ds_buisness"
+                android:textColor="@android:color/black"
+                android:padding="10dp"
+                android:id="@+id/staff_members_text_ds"/>
+
+            <EditText
+                android:id="@+id/staff_members_et_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:textSize="24dp"
+                android:layout_below="@id/staff_members_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How many products/services do you offer"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/staff_members_et_ds"
+                android:padding="10dp"
+                android:id="@+id/product_no_text_ds"/>
+
+            <EditText
+                android:id="@+id/product_no_et_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:textSize="24dp"
+                android:layout_below="@id/product_no_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Have you expanded your business in last 3 months(Diversity of products/services/size of business)?"
+                android:textSize="24dp"
+                android:layout_below="@id/product_no_et_ds"
+                android:textColor="@android:color/black"
+                android:padding="10dp"
+                android:id="@+id/prod_expa_text_ds"/>
+
+            <Spinner
+                android:id="@+id/prod_expa_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/prod_expa"
+                android:layout_below="@id/prod_expa_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What is the current footfall/customer base per day?"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/prod_expa_spinner_ds"
+                android:padding="10dp"
+                android:id="@+id/footfall_text_ds"/>
+
+            <EditText
+                android:id="@+id/footfall_et_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_below="@id/footfall_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What is the current revenue generated from your business?"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/footfall_et_ds"
+                android:padding="10dp"
+                android:id="@+id/revenue_text_ds"/>
+
+            <EditText
+                android:id="@+id/revenue_et_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_below="@id/revenue_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What are your current profits from the business?"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/revenue_et_ds"
+                android:padding="10dp"
+                android:id="@+id/profits_text_ds"/>
+
+            <EditText
+                android:id="@+id/profits_et_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:layout_below="@id/profits_text_ds"
+                android:padding="10dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:id="@+id/next6_btn_ds"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimaryDark"
+                android:textSize="24dp"
+                android:layout_alignEnd="@id/profits_et_ds"
+                android:layout_below="@id/profits_et_ds"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

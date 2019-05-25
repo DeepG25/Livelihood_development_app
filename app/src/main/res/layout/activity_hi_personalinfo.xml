@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.chaitanya.HI_personalinfo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/main_toolbar" android:id="@+id/toolbar_hpi"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enrollment ID :"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:layout_below="@id/toolbar_hpi"
+                android:id="@+id/enroll_id_text" />
+
+            <TextView
+                android:id="@+id/enroll_id_no1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_alignEnd="@id/womenName"
+                android:layout_below="@id/toolbar_hpi"
+                android:padding="15dp"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@id/enroll_id_text"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/familyHead_text1"
+                android:text="परिवार के मुखिया का नाम"
+                android:layout_below="@id/enroll_id_no1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/familyHead1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@id/familyHead_text1"
+                android:textSize="20dp"
+                android:layout_alignEnd="@id/womenName1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/womenName_text1"
+                android:text="महिला का नाम"
+                android:layout_below="@id/familyHead1"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/womenName1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/womenName_text1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/marital_status1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="वैवाहिक स्थिति"
+                android:textSize="24dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:layout_below="@id/womenName1"
+                android:textColor="@android:color/black"/>
+
+            <Spinner
+                android:id="@+id/marital_status_spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/marital_status1"
+                android:entries="@array/maritalStatus1"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/member_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/marital_status_spinner1"
+                android:layout_marginTop="12dp"
+                android:padding="5dp"
+                android:text=" क्या आप किसी उत्पाद समूह के सदस्य हैं?"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/member_text_spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/member_text1"
+                android:entries="@array/yes_no1"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/social_category1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="सामाजिक श्रेणी"
+                android:textSize="24dp"
+                android:layout_below="@id/member_text_spinner1"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/black"/>
+
+            <Spinner
+                android:id="@+id/social_category_spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/social_category1"
+                android:entries="@array/SocialCategory"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/economic_category1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="आर्थिक श्रेणी"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/social_category_spinner1"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"/>
+
+            <Spinner
+                android:id="@+id/economic_category_spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/womenName1"
+                android:layout_below="@id/economic_category1"
+                android:entries="@array/EconomicCategory1"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp">
+
+            </Spinner>
+
+            <TextView
+                android:id="@+id/house_type1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="घर का प्रकार"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/economic_category_spinner1"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"/>
+
+            <Spinner
+                android:id="@+id/house_type_spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/house_type1"
+                android:entries="@array/HouseType1"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp">
+
+            </Spinner>
+
+            <TextView
+                android:id="@+id/house_ele1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/house_type_spinner1"
+                android:text=" क्या घर में अधिकृत बिजली है?"
+                android:textColor="@android:color/black"
+                android:textSize="24dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"/>
+
+            <Spinner
+                android:id="@+id/ele_spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/house_ele1"
+                android:entries="@array/yes_no1"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/total_members1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="घर में कुल सदस्यों की संख्या"
+                android:background="@android:color/holo_red_light"
+                android:layout_below="@id/ele_spinner1"
+                android:textSize="24dp"
+                android:textColor="@android:color/white"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/total_male1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="कुल पुरुष (18 वर्ष से अधिक)"
+                android:textSize="24dp"
+                android:layout_below="@id/total_members1"
+                android:textColor="@android:color/black"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/total_male_et1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:layout_below="@id/total_male1"
+                android:inputType="number"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/total_female1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="कुल महिलाएँ (18 वर्ष से अधिक)"
+                android:textSize="24dp"
+                android:layout_below="@id/total_male_et1"
+                android:textColor="@android:color/black"
+                android:padding="10dp"/>
+            <EditText
+                android:id="@+id/total_female_et1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:layout_below="@id/total_female1"
+                android:inputType="number"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp" />
+            <TextView
+                android:id="@+id/total_boy1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="कुल लड़के (18 वर्ष से कम)"
+                android:textSize="24dp"
+                android:layout_below="@id/total_female_et1"
+                android:textColor="@android:color/black"
+                android:padding="10dp"/>
+            <EditText
+                android:id="@+id/total_boy_et1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:layout_below="@id/total_boy1"
+                android:inputType="number"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/total_girl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/total_boy_et1"
+                android:text="कुल लड़कियां (18 वर्ष से कम)"
+                android:textColor="@android:color/black"
+                android:textSize="24dp"
+                android:padding="10dp"/>
+
+            <EditText
+                android:id="@+id/total_girl_et1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:layout_below="@id/total_girl1"
+                android:inputType="number"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/source_income1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/total_girl_et1"
+                android:text="आमदनी का स्रोत"
+                android:textColor="@android:color/black"
+                android:textSize="24dp"
+                android:padding="10dp"/>
+
+            <Spinner
+                android:id="@+id/source_income_spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/source_income1"
+                android:entries="@array/income_occupation1"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/members_inst1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CBO या संस्थान में सदस्यता"
+                android:layout_below="@id/source_income_spinner1"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp"/>
+
+            <Spinner
+                android:id="@+id/members_inst_spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/womenName1"
+                android:layout_below="@id/members_inst1"
+                android:entries="@array/members_instution1"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp">
+
+            </Spinner>
+
+            <TextView
+                android:id="@+id/member_shg1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/members_inst_spinner1"
+                android:text=" क्या महिला SHG की सदस्य है?"
+                android:textColor="@android:color/black"
+                android:textSize="24dp"
+                android:padding="10dp"/>
+
+            <Spinner
+                android:id="@+id/member_shg_spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/womenName1"
+                android:layout_below="@id/member_shg1"
+                android:entries="@array/yes_no1"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/farmer_category1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/member_shg_spinner1"
+                android:layout_marginTop="12dp"
+                android:padding="10dp"
+                android:text=" किसान श्रेणी?"
+                android:textColor="@android:color/black"
+                android:textSize="24dp"/>
+
+            <Spinner
+                android:id="@+id/farmer_category_spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/farmer_category1"
+                android:entries="@array/farmer_category1"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/total_land1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/farmer_category_spinner1"
+                android:layout_marginTop="12dp"
+                android:padding="10dp"
+                android:text="कुल भूमि"
+                android:textColor="@android:color/black"
+                android:textSize="24dp"/>
+
+            <EditText
+                android:id="@+id/total_land_et1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0 (एकड़ में)"
+                android:layout_below="@id/total_land1"
+                android:inputType="number"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/cultivated_land1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/total_land_et1"
+                android:padding="10dp"
+                android:text="जुती हुई जमीन"
+                android:textColor="@android:color/black"
+                android:textSize="24dp"/>
+
+            <EditText
+                android:id="@+id/cultivated_land_et1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0 (एकड़ में)"
+                android:layout_below="@id/cultivated_land1"
+                android:inputType="number"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/irrigated_land1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cultivated_land_et1"
+                android:padding="10dp"
+                android:text="सिंचित भूमि"
+                android:textColor="@android:color/black"
+                android:textSize="24dp"/>
+
+            <EditText
+                android:id="@+id/irrigated_land_et1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0 (एकड़ में)"
+                android:layout_below="@id/irrigated_land1"
+                android:inputType="number"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/irrigation_source1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/irrigated_land_et1"
+                android:padding="10dp"
+                android:text=" सिंचाई का स्रोत"
+                android:textColor="@android:color/black"
+                android:textSize="24dp"/>
+
+            <Spinner
+                android:id="@+id/irrigation_source_spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/irrigation_source1"
+                android:entries="@array/irrigation_source1"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp">
+            </Spinner>
+
+
+            <Button
+                android:id="@+id/next1_btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/ele_spinner1"
+                android:layout_below="@id/irrigation_source_spinner1"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:padding="10dp"
+                android:text="आगे"
+                android:textAllCaps="false"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_marginBottom="30dp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.chaitanya.EN_ds_loan">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/main_toolbar" android:id="@+id/toolbar_ds_loan"></include>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do you have a bank account?"
+                android:textSize="24dp"
+                android:layout_below="@id/toolbar_ds_loan"
+                android:textColor="@android:color/black"
+                android:padding="10dp"
+                android:id="@+id/bank_account_text_ds"/>
+
+            <Spinner
+                android:id="@+id/bank_account_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/yes_no"
+                android:layout_below="@id/bank_account_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What kind of bank balance account do you have?"
+                android:textSize="24dp"
+                android:layout_below="@id/bank_account_spinner_ds"
+                android:textColor="@android:color/black"
+                android:padding="10dp"
+                android:id="@+id/account_type_text_ds"/>
+
+            <Spinner
+                android:id="@+id/account_type_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/account_type"
+                android:layout_below="@id/account_type_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How frequently do you visit the bank?"
+                android:textSize="24dp"
+                android:layout_below="@id/account_type_spinner_ds"
+                android:textColor="@android:color/black"
+                android:padding="10dp"
+                android:id="@+id/bank_visit_text_ds"/>
+
+            <Spinner
+                android:id="@+id/bank_visit_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/bank_visit"
+                android:layout_below="@id/bank_visit_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="If you don't go to the bank regurlarly, what are the reasons for the same?"
+                android:textSize="24dp"
+                android:layout_below="@id/bank_visit_spinner_ds"
+                android:textColor="@android:color/black"
+                android:padding="10dp"
+                android:id="@+id/reason_visit_text_ds"/>
+
+            <Spinner
+                android:id="@+id/reason_visit_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/reasons_visit"
+                android:layout_below="@id/reason_visit_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="If not, why have you not been able to open account with a bank/finanacial institutions?"
+                android:textSize="24dp"
+                android:layout_below="@id/reason_visit_spinner_ds"
+                android:textColor="@android:color/black"
+                android:padding="10dp"
+                android:id="@+id/open_account_text_ds"/>
+
+            <Spinner
+                android:id="@+id/open_account_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/not_open_account"
+                android:layout_below="@id/open_account_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What are the various identification documents that you have with you?"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/open_account_spinner_ds"
+                android:padding="10dp"
+                android:id="@+id/documents_text_ds"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ration card"
+                android:textSize="24dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/ration_card_box"
+                android:layout_below="@id/documents_text_ds"
+                android:padding="10dp"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aadhar Card"
+                android:textSize="24dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/aadhaar_card_box"
+                android:layout_below="@id/documents_text_ds"
+                android:layout_toRightOf="@id/ration_card_box"
+                android:padding="10dp" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VAO Certificate"
+                android:textSize="24dp"
+                android:layout_alignStart="@id/aadhaar_card_box"
+                android:id="@+id/vao_box"
+                android:layout_toRightOf="@id/voter_id_box"
+                android:padding="10dp"
+                android:layout_below="@id/aadhaar_card_box"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Voter ID"
+                android:textSize="24dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/voter_id_box"
+                android:layout_below="@id/ration_card_box"
+                android:padding="10dp" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PAN Card"
+                android:textSize="24dp"
+                android:id="@+id/pan_box"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:layout_below="@id/vao_box"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other"
+                android:textSize="24dp"
+                android:id="@+id/other_box"
+                android:layout_alignStart="@id/aadhaar_card_box"
+                android:layout_toRightOf="@id/pan_box"
+                android:padding="10dp"
+                android:layout_below="@id/vao_box"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Has your household availed financial product from the bank?"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp"
+                android:layout_below="@id/other_box"
+                android:id="@+id/financial_pr_text_ds"/>
+
+            <Spinner
+                android:id="@+id/financial_pr_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/yes_no"
+                android:layout_below="@id/financial_pr_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="If you have, what is the kind of financial products that your household has availed?"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp"
+                android:layout_below="@id/financial_pr_spinner_ds"
+                android:id="@+id/financial_pr1_text_ds"/>
+
+            <Spinner
+                android:id="@+id/financial_pr1_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/kind_financial"
+                android:layout_below="@id/financial_pr1_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Which of the following services have you availed from a bank?"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/financial_pr1_spinner_ds"
+                android:padding="10dp"
+                android:id="@+id/service_bank_text_ds"/>
+
+            <Spinner
+                android:id="@+id/service_bank_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/money_type"
+                android:layout_below="@id/service_bank_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="If your household has borrowed a loan from a bank, what is the type of loan that you have borrowed?"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/service_bank_spinner_ds"
+                android:padding="10dp"
+                android:id="@+id/service_bank1_text_ds"/>
+
+            <Spinner
+                android:id="@+id/service_bank1_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/loan_type"
+                android:layout_below="@id/service_bank1_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Have you taken out a loan before?"
+                android:textSize="24dp"
+                android:layout_below="@id/service_bank1_spinner_ds"
+                android:textColor="@android:color/black"
+                android:padding="10dp"
+                android:id="@+id/loan_taken_text_ds"/>
+
+            <Spinner
+                android:id="@+id/loan_taken_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/yes_no"
+                android:layout_below="@id/loan_taken_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="From whom have you taken out a loan?"
+                android:textSize="24dp"
+                android:layout_below="@id/loan_taken_spinner_ds"
+                android:textColor="@android:color/black"
+                android:padding="10dp"
+                android:id="@+id/loan_whom_text_ds"/>
+
+            <Spinner
+                android:id="@+id/loan_whom_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/loan_whom"
+                android:layout_below="@id/loan_whom_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Where do you keep your money?"
+                android:textSize="24dp"
+                android:layout_below="@id/loan_whom_spinner_ds"
+                android:textColor="@android:color/black"
+                android:padding="10dp"
+                android:id="@+id/keep_money_text_ds"/>
+
+            <Spinner
+                android:id="@+id/keep_money_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/keep_money"
+                android:layout_below="@id/keep_money_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do you have any debt? If so, how much"
+                android:textSize="24dp"
+                android:layout_below="@id/keep_money_spinner_ds"
+                android:textColor="@android:color/black"
+                android:padding="10dp"
+                android:id="@+id/debt_text_ds"/>
+
+            <Spinner
+                android:id="@+id/debt_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/debt"
+                android:layout_below="@id/debt_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do you feel you have access to formal credit linkages?"
+                android:textSize="24dp"
+                android:layout_below="@id/debt_spinner_ds"
+                android:textColor="@android:color/black"
+                android:padding="10dp"
+                android:id="@+id/credit_linkage_text_ds"/>
+
+            <Spinner
+                android:id="@+id/credit_linkage_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/yes_no"
+                android:layout_below="@id/credit_linkage_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Have you taken an insurance product from the bank?"
+                android:textSize="24dp"
+                android:layout_below="@id/credit_linkage_spinner_ds"
+                android:textColor="@android:color/black"
+                android:padding="10dp"
+                android:id="@+id/insu_pro_text_ds"/>
+
+            <Spinner
+                android:id="@+id/insu_pro_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/yes_no"
+                android:layout_below="@id/insu_pro_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="If yes, what kind of insurance product have you availed?"
+                android:textSize="24dp"
+                android:layout_below="@id/insu_pro_spinner_ds"
+                android:textColor="@android:color/black"
+                android:padding="10dp"
+                android:id="@+id/what_insu_text_ds"/>
+
+            <Spinner
+                android:id="@+id/what_insu_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/insu_type"
+                android:layout_below="@id/what_insu_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Have you made savings in the bank/financial institutions?"
+                android:textSize="24dp"
+                android:layout_below="@id/what_insu_spinner_ds"
+                android:textColor="@android:color/black"
+                android:padding="10dp"
+                android:id="@+id/saving_bank_text_ds"/>
+
+            <Spinner
+                android:id="@+id/saving_bank_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/yndn"
+                android:layout_below="@id/saving_bank_text_ds"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What kind of pension scheme has your household invested in?"
+                android:textSize="24dp"
+                android:layout_below="@id/saving_bank_spinner_ds"
+                android:textColor="@android:color/black"
+                android:padding="10dp"
+                android:id="@+id/pension_text_ds"/>
+
+            <Spinner
+                android:id="@+id/pension_spinner_ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/pension"
+                android:layout_below="@id/pension_text_ds"
+                android:padding="10dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:id="@+id/next5_btn_ds"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimaryDark"
+                android:textSize="24dp"
+                android:layout_alignEnd="@id/pension_spinner_ds"
+                android:layout_below="@id/pension_spinner_ds"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

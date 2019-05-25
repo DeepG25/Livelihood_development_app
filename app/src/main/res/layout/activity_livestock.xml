@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.chaitanya.LivestockActivity">
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/main_toolbar" android:id="@+id/toolbar_elivestock"></include>
+
+            <TextView
+                android:id="@+id/enrollment_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enrollment ID :"
+                android:textSize="24dp"
+                android:layout_below="@id/toolbar_elivestock"
+                android:textColor="@android:color/black"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/enrollment_id_number2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/enrollment_id"
+                android:padding="10dp"
+                android:layout_below="@id/toolbar_elivestock"
+                android:textSize="24dp" />
+
+
+            <TextView
+                android:id="@+id/own_animal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do you have own animals"
+                android:layout_below="@id/enrollment_id_number"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp"/>
+
+
+            <Spinner
+                android:id="@+id/own_animal_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/own_animal"
+                android:entries="@array/own_animal"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp">
+            </Spinner>
+
+
+            <TextView
+                android:id="@+id/local_cow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Local Cow"
+                android:layout_below="@id/own_animal_spinner"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/local_cow_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:layout_below="@id/local_cow"
+                android:padding="10dp"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/buffalo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buffalo"
+                android:layout_below="@id/local_cow_et"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/buffalo_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:layout_below="@id/buffalo"
+                android:padding="10dp"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/goat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Goat"
+                android:layout_below="@id/buffalo_et"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/goat_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:layout_below="@id/goat"
+                android:padding="10dp"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/sheep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sheep"
+                android:layout_below="@id/goat_et"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/sheep_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="number"
+                android:layout_below="@id/sheep"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/backyard_poultry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Backyard Poultry"
+                android:layout_below="@id/sheep_et"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp"
+                android:inputType="number"/>
+
+            <EditText
+                android:id="@+id/backyard_poultry_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:layout_below="@id/backyard_poultry"
+                android:inputType="number"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/bullock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bullock"
+                android:layout_below="@id/backyard_poultry_et"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/bullock_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:layout_below="@id/bullock"
+                android:padding="10dp"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/milk_sold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Milk sold in last year (Ltrs)"
+                android:layout_below="@id/bullock_et"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/milk_sold_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:layout_below="@id/milk_sold"
+                android:padding="10dp"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/eggs_sold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Eggs sold in last year (No's)"
+                android:layout_below="@id/milk_sold_et"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/eggs_sold_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/eggs_sold"
+                android:hint="0"
+                android:inputType="number"
+                android:padding="10dp" />
+            <TextView
+                android:id="@+id/male_goat_sold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Male goat sold in last year (No's)"
+                android:layout_below="@id/eggs_sold_et"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/male_goat_sold_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:layout_below="@id/male_goat_sold"
+                android:padding="10dp"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/buffalo_sold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buffalo sold in last year (No's)"
+                android:layout_below="@id/male_goat_sold_et"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/buffalo_sold_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:layout_below="@id/buffalo_sold"
+                android:padding="10dp"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/female_goat_sold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Female goat sold in last year (No's)"
+                android:layout_below="@id/buffalo_sold_et"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/female_goat_sold_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:layout_below="@id/female_goat_sold"
+                android:padding="10dp"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/poultry_birds_sold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Poultry birds sold in last year (No's)"
+                android:layout_below="@id/female_goat_sold_et"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/poultry_birds_sold_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:layout_below="@id/poultry_birds_sold"
+                android:padding="10dp"
+                android:inputType="number"/>
+
+            <Button
+                android:id="@+id/next4_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:layout_below="@id/poultry_birds_sold_et"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="30dp"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="30dp"
+                android:padding="15dp"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

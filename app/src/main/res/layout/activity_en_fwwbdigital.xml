@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.chaitanya.EN_fwwbdigital">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/main_toolbar" android:id="@+id/toolbar_fwwb_digital"></include>
+            <TextView
+                android:id="@+id/enrollment_id_fwwb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="0dp"
+                android:padding="10dp"
+                android:layout_below="@id/toolbar_fwwb_digital"
+                android:text="Enrollment ID"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/enrollment_id_number_fwwb_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toolbar_fwwb_digital"
+                android:layout_toRightOf="@id/enrollment_id_fwwb"
+                android:padding="10dp"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/Digital_Banking_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Digital Banking"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_red_light"
+                android:textSize="24dp"
+                android:layout_below="@id/enrollment_id_number_fwwb_3"
+                android:padding="10dp"/>
+
+
+            <TextView
+                android:id="@+id/atm_debit_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Digital_Banking_fwwb"
+                android:padding="10dp"
+                android:text="Do you have ATM/Debit Card"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/atm_debit_spinner_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/atm_debit_fwwb"
+                android:entries="@array/yes_no"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/if_yes_atm_debit_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/atm_debit_spinner_fwwb"
+                android:padding="10dp"
+                android:text="If YES, do you operate it"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/if_yes_atm_debit_spinner_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/if_yes_atm_debit_fwwb"
+                android:entries="@array/yes_no"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/if_no_atm_debit_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/if_yes_atm_debit_spinner_fwwb"
+                android:padding="10dp"
+                android:text="If NO, who operates it"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/if_no_atm_debit_spinner_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/if_no_atm_debit_fwwb"
+                android:entries="@array/if_no_atm_debit_fwwb"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/if_no_atm_debit_reason_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/if_no_atm_debit_spinner_fwwb"
+                android:padding="10dp"
+                android:text="Reason for not using it"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/if_no_atm_debit_reason_spinner_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/if_no_atm_debit_reason_fwwb"
+                android:entries="@array/if_no_reason_fwwb"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/digital_banking_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/if_no_atm_debit_reason_spinner_fwwb"
+                android:padding="10dp"
+                android:text="Do you use digital banking"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/digital_banking_spinner_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/digital_banking_fwwb"
+                android:entries="@array/yes_no"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/if_yes_digital_banking_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/digital_banking_spinner_fwwb"
+                android:padding="10dp"
+                android:text="If yes, which digital platform you are currently using"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <RelativeLayout
+                android:id="@+id/if_yes_digital_banking_relative_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/if_yes_digital_banking_fwwb">
+
+                <CheckBox
+                    android:id="@+id/if_yes_digital_banking_checkbox_fwwb_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BHIM App"
+                    android:padding="10dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="20dp"/>
+
+                <CheckBox
+                    android:id="@+id/if_yes_digital_banking_checkbox_fwwb_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bank App"
+                    android:padding="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignStart="@id/if_yes_digital_banking_checkbox_fwwb_4"/>
+                <CheckBox
+                    android:id="@+id/if_yes_digital_banking_checkbox_fwwb_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/if_yes_digital_banking_checkbox_fwwb_1"
+                    android:text="Micro ATM"
+                    android:padding="10dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="20dp" />
+                <CheckBox
+                    android:id="@+id/if_yes_digital_banking_checkbox_fwwb_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/if_yes_digital_banking_checkbox_fwwb_2"
+                    android:text="POS Machine"
+                    android:padding="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="20dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/if_no_reason_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/if_yes_digital_banking_relative_checkbox"
+                android:padding="10dp"
+                android:text="If NO, reason for not using"
+                android:textColor="@android:color/black"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/if_no_reason_spinner_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/if_no_reason_fwwb"
+                android:entries="@array/if_no_reason_fwwb"
+                android:padding="10dp">
+            </Spinner>
+
+            <Button
+                android:id="@+id/next2_btn_fwwb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/if_no_reason_spinner_fwwb"
+                android:layout_alignParentEnd="true"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="30dp"
+                android:padding="15dp"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textSize="20dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

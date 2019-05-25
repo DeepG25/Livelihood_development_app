@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.chaitanya.EN_food_security">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/main_toolbar" android:id="@+id/toolbar_efood_security"></include>
+
+            <TextView
+                android:id="@+id/enrollment_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Enrollment ID :"
+                android:layout_below="@id/toolbar_efood_security"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/enrollment_id_number6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toolbar_efood_security"
+                android:layout_toRightOf="@id/enrollment_id"
+                android:padding="10dp"
+                android:textSize="24dp" />
+
+
+            <TextView
+                android:id="@+id/own_farm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/enrollment_id_number"
+                android:padding="10dp"
+                android:text="From own farm"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/own_farm_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/own_farm"
+                android:entries="@array/own_farm"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/rice_wheat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/own_farm_spinner"
+                android:padding="10dp"
+                android:text="Do you get Rice/Wheat from PDS"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/rice_wheat_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rice_wheat"
+                android:entries="@array/yes_no"
+                android:padding="10dp">
+
+            </Spinner>
+
+            <TextView
+                android:id="@+id/borrow_cereal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rice_wheat_spinner"
+                android:padding="10dp"
+                android:text="Was there any part when you borrowed cereals from others"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/borrow_cereal_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/borrow_cereal"
+                android:entries="@array/yes_no"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/if_yes_borrow_cereal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/borrow_cereal_spinner"
+                android:padding="10dp"
+                android:text="If YES. How much quantity (Qtl)"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <EditText
+                android:id="@+id/if_yes_borrow_cereal_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/if_yes_borrow_cereal"
+                android:hint="0"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/reason_borrow_cereal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/if_yes_borrow_cereal_et"
+                android:padding="10dp"
+                android:text="Reason of borrowing of cereals"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/reason_borrow_cereal_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reason_borrow_cereal"
+                android:entries="@array/reason_borrow"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/sufficient_food"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reason_borrow_cereal_spinner"
+                android:padding="10dp"
+                android:text="Do you get sufficient food from your own farm"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/sufficient_food_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sufficient_food"
+                android:entries="@array/yes_no"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/additional_source"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sufficient_food_spinner"
+                android:padding="10dp"
+                android:text="What are the additional source from where you ensure food security"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/additional_source_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/additional_source"
+                android:entries="@array/additional_source"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/vegetable_garden"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/additional_source_spinner"
+                android:padding="10dp"
+                android:text="Whether vegetables in kitchen garden are grown round the year"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/vegetable_garden_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vegetable_garden"
+                android:entries="@array/yes_no"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/undernourished_child"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vegetable_garden_spinner"
+                android:padding="10dp"
+                android:text="Undernourished child in family"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <Spinner
+                android:id="@+id/undernourished_child_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/undernourished_child"
+                android:entries="@array/yes_no"
+                android:padding="10dp">
+            </Spinner>
+
+            <Button
+                android:id="@+id/next8_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/undernourished_child_spinner"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="30dp"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                android:padding="15dp"
+                android:textAllCaps="false"
+                android:text="Next" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

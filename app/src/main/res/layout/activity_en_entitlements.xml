@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.chaitanya.EN_entitlements">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/main_toolbar" android:id="@+id/toolbar_een"></include>
+
+            <TextView
+                android:id="@+id/enrollment_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enrollment ID :"
+                android:textSize="24dp"
+                android:layout_below="@id/toolbar_een"
+                android:textColor="@android:color/black"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/enrollment_id_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toolbar_een"
+                android:layout_toRightOf="@id/enrollment_id"
+                android:padding="10dp"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/ration_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ration Card"
+                android:layout_below="@id/enrollment_id_number"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp"/>
+            <Spinner
+                android:id="@+id/ration_card_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ration_card"
+                android:entries="@array/yes_no"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/aadhaar_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aadhaar Card"
+                android:layout_below="@id/ration_card_spinner"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp"/>
+            <Spinner
+                android:id="@+id/aadhaar_card_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aadhaar_card"
+                android:entries="@array/yes_no"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp">
+            </Spinner>
+            <TextView
+                android:id="@+id/mgnrega"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MGNREGA"
+                android:layout_below="@id/aadhaar_card_spinner"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp"/>
+            <Spinner
+                android:id="@+id/mgnrega_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mgnrega"
+                android:entries="@array/yes_no"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp">
+            </Spinner>
+            <TextView
+                android:id="@+id/gas_conn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gas Connection"
+                android:layout_below="@id/mgnrega_spinner"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp"/>
+            <Spinner
+                android:id="@+id/gas_conn_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gas_conn"
+                android:entries="@array/yes_no"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp">
+            </Spinner>
+            <TextView
+                android:id="@+id/saving_bank_accn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Saving bank account"
+                android:layout_below="@id/gas_conn_spinner"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp"/>
+            <Spinner
+                android:id="@+id/saving_bank_accn_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/saving_bank_accn"
+                android:entries="@array/yes_no"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp">
+            </Spinner>
+            <TextView
+                android:id="@+id/joint_entitlement_house"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Joint entitlement of property husband and wife (House)"
+                android:layout_below="@id/saving_bank_accn_spinner"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp"/>
+            <Spinner
+                android:id="@+id/joint_entitlement_house_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/joint_entitlement_house"
+                android:entries="@array/yes_no"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp">
+            </Spinner>
+            <TextView
+                android:id="@+id/joint_entitlement_land"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Joint entitlement of property husband and wife (Land)"
+                android:layout_below="@id/joint_entitlement_house_spinner"
+                android:textSize="24dp"
+                android:textColor="@android:color/black"
+                android:padding="10dp"/>
+            <Spinner
+                android:id="@+id/joint_entitlement_land_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/joint_entitlement_land"
+                android:entries="@array/yes_no"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp">
+            </Spinner>
+
+            <Button
+                android:id="@+id/next2_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:layout_below="@id/joint_entitlement_land_spinner"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="30dp"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textAllCaps="false"
+                android:padding="15dp"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

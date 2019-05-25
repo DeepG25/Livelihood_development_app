@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.chaitanya.EN_fwwbsaving">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/main_toolbar" android:id="@+id/toolbar_fwwb_saving"></include>
+            <TextView
+                android:id="@+id/enrollment_id_fwwb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_below="@id/toolbar_fwwb_saving"
+                android:text="Enrollment ID"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/enrollment_id_number_fwwb_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/enrollment_id_fwwb"
+                android:layout_below="@id/toolbar_fwwb_saving"
+                android:padding="10dp"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/savings_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/enrollment_id_number_fwwb_2"
+                android:layout_alignParentStart="true"
+                android:padding="10dp"
+                android:text="Savings"
+                android:background="@android:color/holo_red_light"
+                android:textColor="@android:color/white"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/saving_account_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/savings_fwwb"
+                android:padding="10dp"
+                android:text="Do you have saving account"
+                android:textColor="@android:color/black"
+                android:textSize="24dp"/>
+
+            <Spinner
+                android:id="@+id/saving_account_spinner_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/saving_account_fwwb"
+                android:entries="@array/yes_no"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/if_yes_where_text_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/saving_account_spinner_fwwb"
+                android:padding="10dp"
+                android:text="If YES, then where"
+                android:textColor="@android:color/black"
+                android:textSize="24dp"/>
+
+            <Spinner
+                android:id="@+id/if_yes_where_spinner_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/if_yes_where_text_fwwb"
+                android:entries="@array/if_yes_where"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/rd_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/if_yes_where_spinner_fwwb"
+                android:padding="10dp"
+                android:text="Do you have RD"
+                android:textColor="@android:color/black"
+                android:textSize="24dp"/>
+
+            <Spinner
+                android:id="@+id/rd_spinner_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rd_fwwb"
+                android:entries="@array/yes_no"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/fd_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rd_spinner_fwwb"
+                android:padding="10dp"
+                android:text="Do you have FD"
+                android:textColor="@android:color/black"
+                android:textSize="24dp"/>
+
+            <Spinner
+                android:id="@+id/fd_spinner_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fd_fwwb"
+                android:entries="@array/yes_no"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/current_savings_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fd_spinner_fwwb"
+                android:padding="10dp"
+                android:text="Current Savings"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_red_light"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/rd_inr_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/current_savings_fwwb"
+                android:padding="10dp"
+                android:text="RD (INR)"
+                android:textColor="@android:color/black"
+                android:textSize="24dp"/>
+
+            <EditText
+                android:id="@+id/rd_inr_et_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rd_inr_fwwb"
+                android:hint="0"
+                android:inputType="number"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/fd_inr_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rd_inr_et_fwwb"
+                android:padding="10dp"
+                android:text="FD (INR)"
+                android:textColor="@android:color/black"
+                android:textSize="24dp"/>
+
+            <EditText
+                android:id="@+id/fd_inr_et_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fd_inr_fwwb"
+                android:hint="0"
+                android:inputType="number"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/post_office_inr_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fd_inr_et_fwwb"
+                android:padding="10dp"
+                android:text="Post Office (INR)"
+                android:textColor="@android:color/black"
+                android:textSize="24dp"/>
+
+            <EditText
+                android:id="@+id/post_office_inr_et_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/post_office_inr_fwwb"
+                android:hint="0"
+                android:inputType="number"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/shg_inr_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/post_office_inr_et_fwwb"
+                android:padding="10dp"
+                android:text="SHG (INR)"
+                android:textColor="@android:color/black"
+                android:textSize="24dp"/>
+
+            <EditText
+                android:id="@+id/shg_inr_et_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shg_inr_fwwb"
+                android:hint="0"
+                android:inputType="number"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/maroop_inr_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shg_inr_et_fwwb"
+                android:padding="10dp"
+                android:text="Maroop (INR)"
+                android:textColor="@android:color/black"
+                android:textSize="24dp"/>
+
+            <EditText
+                android:id="@+id/maroop_inr_et_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/maroop_inr_fwwb"
+                android:hint="0"
+                android:inputType="number"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/borrowing_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/maroop_inr_et_fwwb"
+                android:padding="10dp"
+                android:text="Borrowing"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_red_light"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/taken_loans_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/borrowing_fwwb"
+                android:padding="10dp"
+                android:text="Have you taken loan(s)"
+                android:textColor="@android:color/black"
+                android:textSize="24dp"/>
+
+            <Spinner
+                android:id="@+id/taken_loans_spinner_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/taken_loans_fwwb"
+                android:entries="@array/yes_no"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/if_yes_source_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/taken_loans_spinner_fwwb"
+                android:padding="10dp"
+                android:text="If YES, which source"
+                android:textColor="@android:color/black"
+                android:textSize="24dp"/>
+
+            <RelativeLayout
+                android:id="@+id/if_yes_source_relative_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/if_yes_source_fwwb">
+
+                <CheckBox
+                    android:id="@+id/if_yes_source_checkbox_fwwb_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MFI"
+                    android:padding="10dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="20dp"/>
+
+                <CheckBox
+                    android:id="@+id/if_yes_source_checkbox_fwwb_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cooperative"
+                    android:padding="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="20dp"/>
+                <CheckBox
+                    android:id="@+id/if_yes_source_checkbox_fwwb_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/if_yes_source_checkbox_fwwb_1"
+                    android:text="NGO"
+                    android:padding="10dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="20dp" />
+                <CheckBox
+                    android:id="@+id/if_yes_source_checkbox_fwwb_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/if_yes_source_checkbox_fwwb_2"
+                    android:text="Bank"
+                    android:padding="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignStart="@id/if_yes_source_checkbox_fwwb_2"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/purpose_loan_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/if_yes_source_relative_checkbox"
+                android:padding="10dp"
+                android:text="Purpose of Loan(s)"
+                android:textColor="@android:color/black"
+                android:textSize="24dp"/>
+
+            <Spinner
+                android:id="@+id/purpose_loan_spinner_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/purpose_loan_fwwb"
+                android:entries="@array/purpose_loan_fwwb"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/total_loan_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/purpose_loan_spinner_fwwb"
+                android:padding="10dp"
+                android:text="Total Loans(s) (INR)"
+                android:textColor="@android:color/black"
+                android:textSize="24dp"/>
+
+            <EditText
+                android:id="@+id/total_loan_et_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/total_loan_fwwb"
+                android:hint="0"
+                android:inputType="number"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/insurance_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/total_loan_et_fwwb"
+                android:padding="10dp"
+                android:text="Insurance"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_red_light"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/do_insurance_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/insurance_fwwb"
+                android:padding="10dp"
+                android:text="Do you have insurance"
+                android:textColor="@android:color/black"
+                android:textSize="24dp"/>
+
+            <Spinner
+                android:id="@+id/do_insurance_spinner_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/do_insurance_fwwb"
+                android:entries="@array/yes_no"
+                android:padding="10dp">
+            </Spinner>
+
+            <TextView
+                android:id="@+id/type_of_insurance_fwwb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/do_insurance_spinner_fwwb"
+                android:padding="10dp"
+                android:text="If YES, type of Insurance"
+                android:textColor="@android:color/black"
+                android:textSize="24dp"/>
+
+            <RelativeLayout
+                android:id="@+id/type_of_insurance_relative_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/type_of_insurance_fwwb">
+
+                <CheckBox
+                    android:id="@+id/if_yes_do_insurance_checkbox_fwwb_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Life Insurance"
+                    android:padding="10dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="20dp"/>
+
+                <CheckBox
+                    android:id="@+id/if_yes_do_insurance_checkbox_fwwb_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medical"
+                    android:padding="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="20dp"/>
+                <CheckBox
+                    android:id="@+id/if_yes_do_insurance_checkbox_fwwb_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/if_yes_do_insurance_checkbox_fwwb_1"
+                    android:text="Livestock"
+                    android:padding="10dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="20dp" />
+                <CheckBox
+                    android:id="@+id/if_yes_do_insurance_checkbox_fwwb_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/if_yes_do_insurance_checkbox_fwwb_2"
+                    android:text="Crop"
+                    android:padding="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignStart="@id/if_yes_do_insurance_checkbox_fwwb_2"/>
+                <CheckBox
+                    android:id="@+id/if_yes_do_insurance_checkbox_fwwb_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/if_yes_do_insurance_checkbox_fwwb_3"
+                    android:text="Business"
+                    android:layout_alignParentStart="true"
+                    android:padding="10dp"
+                    android:layout_marginLeft="20dp"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/next1_btn_fwwb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/type_of_insurance_relative_checkbox"
+                android:layout_alignParentEnd="true"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginTop="30dp"
+                android:padding="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="30dp"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textSize="20dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

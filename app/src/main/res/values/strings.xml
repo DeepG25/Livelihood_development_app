@@ -1,0 +1,484 @@
+<resources>
+    <string name="app_name">Chaitanya</string>
+    <array name="maritalStatus">
+        <item>"Married"</item>
+        <item>"Unmarried"</item>
+        <item>"Divorced"</item>
+        <item>"Single"</item>
+    </array>
+
+    <array name="maritalStatus1">
+        <item>"विवाहित"</item>
+        <item>"अविवाहित"</item>
+        <item>"तलाकशुदा"</item>
+        <item>"बालिका"</item>
+    </array>
+
+    <array name="yes_no">
+        <item>"Yes"</item>
+        <item>"No"</item>
+    </array>
+
+    <array name="yes_no1">
+        <item>"हाँ"</item>
+        <item>"नहीं"</item>
+    </array>
+
+    <array name="SocialCategory">
+        <item>"SC"</item>
+        <item>"ST"</item>
+        <item>"OBC"</item>
+        <item>"Other"</item>
+    </array>
+
+    <array name="EconomicCategory">
+        <item>"BPL"</item>
+        <item>"APL"</item>
+    </array>
+
+    <array name="EconomicCategory1">
+        <item>"गरीबी रेखा से नीचे"</item>
+        <item>"गरीबी रेखा से ऊपर"</item>
+    </array>
+
+    <array name="HouseType">
+        <item>"Kutcha"</item>
+        <item>"Semi Pucca"</item>
+        <item>"Pucca"</item>
+    </array>
+
+    <array name="HouseType1">
+        <item>"कच्चा"</item>
+        <item>"अर्द्ध पक्का"</item>
+        <item>"पक्का"</item>
+    </array>
+
+    <array name="income_occupation">
+        <item>"Agriculture"</item>
+        <item>"Animal Husbandry"</item>
+        <item>"NTFP Collection"</item>
+        <item>"Local labour"</item>
+        <item>"Migrant labour"</item>
+        <item>"Service"</item>
+        <item>"Enterprises or Business"</item>
+        <item>"Govt Pension"</item>
+        <item>"Other"</item>
+    </array>
+
+    <array name="income_occupation1">
+        <item>"खेती-बाड़ी"</item>
+        <item>"पशुपालन"</item>
+        <item>"NTFP संग्रह"</item>
+        <item>"स्थानीय मजदूर"</item>
+        <item>"प्रवासी मजदूर"</item>
+        <item>"नौकरी"</item>
+        <item>"उद्यम या व्यापार"</item>
+        <item>"सरकारी पेंशन"</item>
+        <item>"अन्य"</item>
+    </array>
+
+    <array name="members_instution">
+        <item>"SHG"</item>
+        <item>"Grampanchayat"</item>
+        <item>"Producer Group"</item>
+        <item>"Farmer Co-op Society"</item>
+        <item>"Dairy Co-operatives"</item>
+        <item>"None"</item>
+        <item>"Other"</item>
+    </array>
+
+    <array name="members_instution1">
+        <item>"SHG"</item>
+        <item>"ग्राम पंचायत"</item>
+        <item>"निर्माता समूह"</item>
+        <item>"किसान सहकारी समिति"</item>
+        <item>"डेयरी सहकारी समिति"</item>
+        <item>"कोई नहीं"</item>
+        <item>"अन्य"</item>
+    </array>
+
+    <array name="farmer_category">
+        <item>"Marginal Farmer (below 2.5 Acre)"</item>
+        <item>"Small Farmer (2.5 to 5.0 Acre)"</item>
+        <item>"Big Farmer (Above 5.0 Acre)"</item>
+        <item>"Landless"</item>
+    </array>
+
+    <array name="farmer_category1">
+        <item>"मामूली किसान (2.5 एकड़ से नीचे)"</item>
+        <item>"छोटे किसान (2.5 से 5.0 एकड़)"</item>
+        <item>"बड़े किसान (5.0 एकड़ से ऊपर)"</item>
+        <item>"भूमिहीन"</item>
+    </array>
+
+    <array name="irrigation_source">
+        <item>"Bore Well"</item>
+        <item>"Open Well"</item>
+        <item>"Canal"</item>
+        <item>"River"</item>
+        <item>"Lease Basis (on rent)"</item>
+    </array>
+
+    <array name="irrigation_source1">
+        <item>"बोअर वेल"</item>
+        <item>"कुंआ"</item>
+        <item>"नहर"</item>
+        <item>"नदी"</item>
+        <item>"किराए का पानी"</item>
+    </array>
+
+    <array name="if_no">
+        <item>No Capital</item>
+        <item>No Training/Information</item>
+        <item>No Raw Material</item>
+        <item>Challenges in finding livelihood</item>
+        <item>No Willingness</item>
+        <item>Other</item>
+    </array>
+
+    <array name="if_no1">
+        <item>कोई पूंजी नहीं</item>
+        <item>कोई प्रशिक्षण / सूचना नहीं</item>
+        <item>कोई कच्चा माल नहीं</item>
+        <item>आजीविका खोजने में चुनौती</item>
+        <item>कोई इच्छा नहीं</item>
+        <item>अन्य</item>
+    </array>
+
+    <array name="soure_of_income_fwwb">
+        <item>"Agriculture"</item>
+        <item>"Dairy"</item>
+        <item>"Animal Husbandry"</item>
+        <item>"Rural Artisan"</item>
+        <item>"Job Salary"</item>
+        <item>"Daily wage"</item>
+        <item>"Micro enterprise"</item>
+    </array>
+
+    <array name="own_animal">
+        <item>Yes</item>
+        <item>No</item>
+        <item>No Animals</item>
+    </array>
+
+
+    <array name="loan_purpose">
+        <item>Enterprise or Business</item>
+        <item>Agriculture</item>
+        <item>Education</item>
+        <item>Health</item>
+        <item>Marriage</item>
+        <item>Repayment of Old Loan</item>
+        <item>Other</item>
+    </array>
+
+    <array name="reason_borrow">
+        <item>Heavy Rains</item>
+        <item>Drought</item>
+        <item>Diseases and pest</item>
+        <item>Depleted Soil Nutrients</item>
+        <item>Other</item>
+    </array>
+
+    <array name="additional_source">
+        <item>Cash Crops</item>
+        <item>Migration</item>
+        <item>Leasing Land</item>
+        <item>Labour</item>
+        <item>Other</item>
+    </array>
+    <array name="own_farm">
+        <item>3 Months</item>
+        <item>6 Months</item>
+        <item>9 Months</item>
+        <item>12 Months</item>
+        <item>No own land</item>
+    </array>
+
+    <array name="if_no_scheme">
+        <item>Do not know about the scheme</item>
+        <item>No one is eligible from the family</item>
+    </array>
+
+    <array name="source_info">
+        <item>Radio</item>
+        <item>News Paper</item>
+        <item>Govt. Officials</item>
+        <item>Ngo</item>
+        <item>Relatives/GP Members/Advance Farmer of Village</item>
+    </array>
+
+    <array name="if_yes_reasons">
+        <item>Online information not submitted within time</item>
+        <item>No proper documents</item>
+        <item>Officers are not cooperative</item>
+        <item>Do not have money to pay self contribution</item>
+        <item>Ignored it</item>
+        <item>Other</item>
+    </array>
+
+    <array name="ltfs_familier">
+        <item>Very familier with their work</item>
+        <item>Have some idea of their work</item>
+        <item>Only with their name</item>
+        <item>Never heard of it</item>
+    </array>
+
+    <array name="ltfs_firsthear">
+        <item>In the last week</item>
+        <item>In the last month</item>
+        <item>In the last 6 months</item>
+        <item>More than 6 months ago</item>
+        <item>Had never heard of them</item>
+    </array>
+
+    <array name="hear_count">
+        <item>Often</item>
+        <item>Sometimes</item>
+        <item>Rarely</item>
+        <item>Never</item>
+    </array>
+
+    <array name="join_program">
+        <item>Very likely (Certain about joining)</item>
+        <item>Quite likely (Still considering)</item>
+        <item>Unlikely (Will not join)</item>
+    </array>
+
+    <array name="family">
+        <item>My Husband</item>
+        <item>My Father/In law</item>
+        <item>My Mother/In law</item>
+        <item>My Children</item>
+        <item>Just Me</item>
+        <item>Me along with someone</item>
+    </array>
+
+    <array name="modes_payments">
+        <item>Banking Card</item>
+        <item>Mobile Wallet</item>
+        <item>UPI</item>
+        <item>AePS</item>
+        <item>USSD</item>
+        <item>None of these</item>
+    </array>
+
+    <array name="account_type">
+        <item>Current Account</item>
+        <item>Savings Account</item>
+        <item>Zero balance Account</item>
+        <item>Other</item>
+    </array>
+
+    <array name="bank_visit">
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Yearly</item>
+        <item>I do not visit the bank regurlarly</item>
+        <item>I do not go to the bank</item>
+        <item>Other</item>
+    </array>
+
+    <array name="reasons_visit">
+        <item>The bank is too far</item>
+        <item>The bank employees are not approachable</item>
+        <item>I do not find convenient modes of transport to visit the bank</item>
+        <item>I do not find the need to go the bank</item>
+        <item>I am scared of entering a bank as I don't know what to do there</item>
+        <item>Other</item>
+    </array>
+
+    <array name="not_open_account">
+        <item>Do not have the need</item>
+        <item>I do not know how to open an account</item>
+        <item>I do not have the adequate documents needed to open the account</item>
+        <item>The staff were not very friendly</item>
+        <item>I felt scared</item>
+        <item>Other</item>
+    </array>
+
+    <array name="kind_financial">
+        <item>Loans</item>
+        <item>Insurance</item>
+        <item>Savings</item>
+        <item>Pension Schemes</item>
+        <item>Others</item>
+    </array>
+
+    <array name="money_type">
+        <item>Deposited money</item>
+        <item>Withdrawn money</item>
+        <item>Transferred money</item>
+        <item>National/International remittance</item>
+        <item>Financial advice</item>
+        <item>Other</item>
+    </array>
+
+    <array name="loan_type">
+        <item>JLG Loan</item>
+        <item>Individual Loan/ Personal Loan</item>
+        <item>Crop Loan</item>
+        <item>Emergency Loan</item>
+        <item>House Loan</item>
+        <item>Cattle/Livestock Loan</item>
+        <item>Working Capital Loan</item>
+        <item>Term Loan</item>
+        <item>Other</item>
+    </array>
+
+    <array name="loan_whom">
+        <item>Family Member</item>
+        <item>MFI</item>
+        <item>Informal Lender</item>
+        <item>Bank</item>
+    </array>
+
+    <array name="keep_money">
+        <item>Chit Fund</item>
+        <item>Bank Account</item>
+        <item>Mobile Account</item>
+        <item>In the home</item>
+        <item>Inestments (in land,home,livestock)</item>
+        <item>Gold</item>
+        <item>We don't save money</item>
+    </array>
+
+    <array name="debt">
+        <item>No</item>
+        <item>Less than 10,000</item>
+        <item>More than 10,000</item>
+        <item>More than 50,000</item>
+        <item>More than 1,00,000</item>
+    </array>
+
+    <array name="insu_type">
+        <item>Life Insurance</item>
+        <item>Accident insurance</item>
+        <item>Health Insurance</item>
+        <item>House Insurance</item>
+        <item>Crop Insurance</item>
+        <item>Livestock Insurance</item>
+        <item>Other</item>
+    </array>
+
+    <array name="yndn">
+        <item>Yes</item>
+        <item>No</item>
+        <item>I do not know</item>
+    </array>
+
+    <array name="pension">
+        <item>NPS(Government Pension Scheme)</item>
+        <item>Other</item>
+    </array>
+
+    <array name="maritalStatus_fwwb">
+        <item>Married</item>
+        <item>Unmarried</item>
+        <item>Divorced</item>
+        <item>Widow</item>
+    </array>
+
+    <array name="group_model">
+        <item>JLG</item>
+        <item>SHG</item>
+        <item>FPC</item>
+    </array>
+
+    <array name="if_yes_where">
+        <item>Bank</item>
+        <item>Post Office</item>
+        <item>Bank and Post Office</item>
+        <item>Maroop</item>
+    </array>
+
+    <array name="purpose_loan_fwwb">
+        <item>Personal</item>
+        <item>Business</item>
+        <item>Both</item>
+    </array>
+
+    <array name="if_no_atm_debit_fwwb">
+        <item>Family members</item>
+        <item>Spouse</item>
+        <item>Son</item>
+    </array>
+
+    <array name="if_no_reason_fwwb">
+        <item>Do not know how to use</item>
+        <item>Afraid of using</item>
+        <item>Network Issues</item>
+        <item>Trust Issues</item>
+    </array>
+
+    <array name="entrepreneur_type">
+        <item>Potential Entrepreneur</item>
+        <item>Nascent stage (below 1 Year) Entrepreneur</item>
+        <item>Mature Entrepreneur</item>
+    </array>
+
+    <array name="nature_business">
+        <item>Production/Manufacturing</item>
+        <item>Service</item>
+        <item>Trade</item>
+    </array>
+
+    <array name="start_business">
+        <item>Partnership</item>
+        <item>Group Activity</item>
+        <item>Started own business</item>
+        <item>Took over a family owned business</item>
+    </array>
+
+    <array name="premises_type">
+        <item>Personal Residence</item>
+        <item>Street Vendor</item>
+        <item>Shop</item>
+    </array>
+
+    <array name="major_source">
+        <item>Own Fund</item>
+        <item>Contribuiton by family</item>
+        <item>Borrowed from Relatives</item>
+        <item>Loan from Banks</item>
+        <item>Loan from MFI/Private institution</item>
+        <item>Loan from money lender</item>
+        <item>Loan from SHG</item>
+    </array>
+
+    <array name="manage_buisness">
+        <item>Group members</item>
+        <item>Partnership</item>
+        <item>Self</item>
+        <item>With family support</item>
+    </array>
+
+    <array name="source_household_income">
+        <item>Agriculture</item>
+        <item>Dairy</item>
+        <item>Animal Husbandry</item>
+        <item>Rural Artisan</item>
+        <item>Job salary</item>
+        <item>Daily wage</item>
+        <item>Micro enterprise</item>
+    </array>
+
+    <array name="prod_expa">
+        <item>Steady business</item>
+        <item>Incremental growth</item>
+        <item>Accelerated growth</item>
+        <item>Exponential growth</item>
+        <item>Decline in business</item>
+    </array>
+
+    <array name="migration">
+        <item>To maintain regular expenditure of the family</item>
+        <item>Better wages</item>
+        <item>Skill based work</item>
+        <item>No option to earn in the village</item>
+        <item>Drought</item>
+        <item>To repay old loans</item>
+        <item>Other</item>
+    </array>
+
+</resources>
